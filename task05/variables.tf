@@ -4,11 +4,13 @@ variable "tags" {
 }
 
 variable "allow_ip" {
-  type = string
+  description = "The IP address range allowed to acces the App Service"
+  type        = string
 }
 
 variable "allow_tm" {
-  type = bool
+  description = "Boolean flag to allow traffic from Azure Traffic Manager service tag"
+  type        = bool
 }
 
 variable "resource_groups" {
