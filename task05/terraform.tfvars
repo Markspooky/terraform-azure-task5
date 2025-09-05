@@ -2,6 +2,9 @@ tags = {
   Creator = "mark_nagy@epam.com"
 }
 
+allow-ip = "18.153.146.156/32"
+allow-tm = true
+
 resource_groups = {
   rg1 = {
     name     = "cmaz-zz733vvq-mod5-rg-01"
