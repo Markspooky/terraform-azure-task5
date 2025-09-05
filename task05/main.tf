@@ -63,6 +63,7 @@ module "traffic_manager" {
       name               = "${v.name}-ep"
       target_resource_id = v.id
       endpoint_location  = v.location
+      priority           = var.workloads[k].priority
     }
   }
 }

@@ -10,5 +10,6 @@ variable "endpoints" {
     name               = string
     target_resource_id = string
     endpoint_location  = string
+    priority           = number
   }))
 }

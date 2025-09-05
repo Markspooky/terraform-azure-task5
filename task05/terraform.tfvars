@@ -25,7 +25,8 @@ resource_groups = {
 
 workloads = {
   w1 = {
-    rg_key = "rg1"
+    rg_key   = "rg1"
+    priority = 1
     plan = {
       name         = "cmaz-zz733vvq-mod5-asp-01"
       sku_name     = "P0v3"
@@ -36,7 +37,8 @@ workloads = {
     }
   }
   w2 = {
-    rg_key = "rg2"
+    rg_key   = "rg2"
+    priority = 2
     plan = {
       name         = "cmaz-zz733vvq-mod5-asp-02"
       sku_name     = "P1v3"
