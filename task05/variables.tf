@@ -3,12 +3,12 @@ variable "tags" {
   type        = map(string)
 }
 
-variable "allow_ip" {
+variable "allow-ip" {
   description = "The IP address range allowed to acces the App Service"
   type        = string
 }
 
-variable "allow_tm" {
+variable "allow-tm" {
   description = "Boolean flag to allow traffic from Azure Traffic Manager service tag"
   type        = bool
 }

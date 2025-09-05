@@ -2,8 +2,8 @@ tags = {
   Creator = "mark_nagy@epam.com"
 }
 
-allow_ip = "18.153.146.156/32"
-allow_tm = true
+allow-ip = "18.153.146.156/32"
+allow-tm = true
 
 resource_groups = {
   rg1 = {
