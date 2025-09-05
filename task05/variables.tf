@@ -3,6 +3,13 @@ variable "tags" {
   type        = map(string)
 }
 
+variable "allow_ip" {
+  type = string
+}
+
+variable "allow_tm" {
+  type = bool
+}
 
 variable "resource_groups" {
   description = "Resource groups to create (unique locations required)"
@@ -17,7 +24,8 @@ variable "resource_groups" {
 variable "workloads" {
   description = "Map of workloads: each defines an App Service Plan and a Windows Web App in a specific RG"
   type = map(object({
-    rg_key = string # key into var.resource_groups
+    rg_key   = string
+    priority = number
     plan = object({
       name         = string
       sku_name     = string
